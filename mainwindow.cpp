@@ -83,23 +83,30 @@ void MainWindow::showError(const QString &message)
     msg->setAttribute(Qt::WA_DeleteOnClose);
     msg->setStyleSheet(
         "QMessageBox {"
-        " background-color: #1f1f1f;"
-        " color: #ffffff;"
+        "    background-color: #ffffff;"
+        "    color: #2c2c2c;"
         "}"
         "QMessageBox QLabel {"
-        " color: #e0e0e0;"
-        " font-size: 12pt;"
+        "    color: #333333;"
+        "    font-size: 12pt;"
         "}"
         "QMessageBox QPushButton {"
-        " background-color: #2b2b2b;"
-        " color: #ffffff;"
-        " border-radius: 10px;"
-        " padding: 6px 14px;"
-        " border: 2px solid #4a4a4a;}"
-        "QMessageBox QPushButton:hover {background-color: #3a3a3a;border-color: #6a6a6a;}"
-        "QMessageBox QPushButton:pressed {background-color: #222222;}");
+        "    background-color: #f0f0f0;"
+        "    color: #2c2c2c;"
+        "    border-radius: 10px;"
+        "    padding: 6px 14px;"
+        "    border: 2px solid #d0d0d0;"
+        "}"
+        "QMessageBox QPushButton:hover {"
+        "    background-color: #e8e8e8;"
+        "    border-color: #b0b0b0;"
+        "}"
+        "QMessageBox QPushButton:pressed {"
+        "    background-color: #d0d0d0;"
+        "}");
     msg->exec();
 }
+
 
 void MainWindow::loadCities()
 {
